@@ -47,7 +47,8 @@ html = """
         <script>
             let ws;
             function connect() {
-                ws = new WebSocket("ws://127.0.0.1:8001/ws");
+                const wsProtocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+                ws = new WebSocket(`${wsProtocol}//${window.location.host}/ws`);
                 
                 ws.onopen = function() {
                     let status = document.getElementById('status');
