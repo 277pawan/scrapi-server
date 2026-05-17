@@ -1,0 +1,32 @@
+# Python-generated files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+build/
+dist/
+wheels/
+*.egg-info/
+.eggs/
+
+# Virtual environments
+venv/
+.venv/
+.venv_std/
+env/
+ENV/
+
+# Data and Logs
+browser_data/
+*.log
+
+# Sensitive Files
+auth.json
+.env
+.env.local
+secrets.json
+
+# IDEs
+.idea/
+.vscode/
+*.swp
